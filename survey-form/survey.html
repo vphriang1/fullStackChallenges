@@ -1,0 +1,84 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+  <body>
+    <h1 id='title'> Ninja Academy Form </h1>
+    <form id='survey-form'>
+    <p id='description'> Apply to the Hidden Leaf Academy by filling in data below: </p>
+      <label id='name-label'> First name </label>
+      <input id='name' placeholder='Sasuke' required>
+      <label> Clan </label>
+      <input id='clan' placeholder='Uchiha' required>
+      <label id='number-label'> Age </label>
+      <input id='number' type='number' placeholder='6' dropdown min='0' max='10'>
+      <label> Zodiac Sign </label>
+      <input ='zodiac' placeholder='Leo'>
+      <label id='email-label'> Email </label>
+      <input id='email' type='email' placeholder='sasukeuchiha@leafninja.com' required>
+      <label> Address </label>
+      <input id='address' placeholder='2042 Cat Avenue'>
+    
+      <p>
+        Have you ever applied to the academy?
+      </p>
+  <fieldset>
+        <label for='applyYes'><input id='applyYes' type='radio' name='applied' value='0'>Yes</label>
+        <label for='applyNo'><input id ='applyNo' type='radio' name='applied' value='1'>No</label>
+        <label for 'applyUnsure'><input id ='applyUnsure' type='radio' name='applied' value='2'>Unsure</label>
+
+      </fieldset>
+      <p> Have you ever been black balled out of the academy? </p>
+      <fieldset>
+        <ul for='blackBalledYes'><input id='blackBalledYes' type='radio' name='blackBalled'value='0'>Yes</ul>
+        
+        <ul for='blackBalledNo'><input id ='blackBalledNo' type='radio' name='blackBalled'value='1'>No</ul>
+        <ul for 'blackBalledUnsure'><input id ='blackBalledUnsure' type='radio' name='blackBalled' value='2'>Unsure</ul>
+      </fieldset>
+        <p>Do you have any allergies?</p>
+      <fieldset>
+        <ul for='allergyYes'><input id='allergyYes' type='radio' name='allergy'value='0'>Yes</ul>
+        <ul for='allergyNo'><input id ='allergyNo' type='radio' name='allergy'value='1'>No</ul>
+        <ul for 'allergyUnsure'><input id ='allergyUnsure' type='radio' name='allergy'value='2'>Unsure</ul>
+      </fieldset>
+        <p> 
+          How much jutsu do you already know?
+        </p>
+      <fieldset>
+        <select id='dropdown' placeholder='I know ..'>
+          <option> 0 Jutsu </option>
+          <option> 1 - 3 Jutsu </option>
+          <option> 4 - 6 Jutsu </option>
+          <option> 7+ Jutsu </option>
+        </select>
+      </fieldset>
+        <p>
+          Are you willing to train yourself into becoming a respected and feared ninja? </p>
+        
+       <fieldset>
+          <ul for='trainYes'><input id='trainYes' type='radio' name='train'value='0'>Yes</ul>
+        <ul for='trainNo'><input id ='trainNo' type='radio' name='train'value='1'>No</ul>
+        <ul for 'trainUnsure'><input id ='trainUnsure' type='radio' name='train'value='2'>Unsure</ul>
+      </fieldset>
+     
+        <p> Are any of your family members ninjas? </p>
+        <fieldset>
+        <ul for='blackOpsYes'><input id='blackOpsYes' type='radio' name='blackOps'value='0'>Yes</ul>
+        <ul for='blackOpsNo'><input id ='blackOpsNo' type='radio' name='blackOps'value='1'>No</ul>
+        <ul for 'blackOpsUnsure'><input id ='blackOpsUnsure' type='radio' name='blackOps'value='2'>Unsure</ul>
+      </fieldset>
+              <p> How many friends do you have that is in the academy?</p>
+      <fieldset>
+<ul for='friendLow'><input type='checkbox' name='friends' value='0' id='friendLow'> 0-4</ul>
+  <ul for='friendMed'><input type='checkbox' name='friends' value='1' id='friendMed'> 5-9</ul>
+        <ul for='friendHigh'><input type='checkbox' name='friends' value='0' id='friendHigh'> 10+</ul>
+    
+      </fieldset>
+          <p> Please take the time to tell us why you want to join the Hidden Leaf Village's academy below: </p>
+      <fieldset>
+        <textarea> </textarea>
+          <button id='submit' type=''>Submit</submit>
+      </fieldset>
+    </form>
+  </body>
+  
+</html>

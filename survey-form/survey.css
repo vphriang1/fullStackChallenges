@@ -1,0 +1,12 @@
+@media (max-width: 300px) {
+  p {
+    font-size: 30px;
+    background: blue;
+  }
+}
+@media (min-width: 500px) {
+  p {
+    font-size: 20px;
+    background: blue;
+  }
+}
