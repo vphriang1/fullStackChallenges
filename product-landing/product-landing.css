@@ -1,0 +1,13 @@
+header {
+  position: absolute;
+}
+
+nav {
+  display: flex;
+}
+
+@media (min-height: 200px) {
+  p a {
+    font-size: 30px;
+  }
+}
