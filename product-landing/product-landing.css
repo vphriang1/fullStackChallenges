@@ -1,13 +1,56 @@
-header {
-  position: absolute;
+#navbar {
+  border-width: 2px;
+  border-color: red;
+  border-style: solid;
+  float: left;
+  width: 20%;
+  height: 85%;
+  text-align: left;
+  position: fixed;
 }
-
-nav {
-  display: flex;
+#main-doc {
+  float: right;
+  width: 75%;
+  border-color: pink;
+  border-style: solid;
+  border-width: 1px;
 }
-
-@media (min-height: 200px) {
-  p a {
-    font-size: 30px;
+.nav-link {
+}
+div {
+  margin-bottom: 30px;
+}
+@media (min-width: 10px) {
+  p,
+  a {
+    font-size: 40px;
+  }
+}
+#navbar {
+  border-width: 2px;
+  border-color: red;
+  border-style: solid;
+  float: left;
+  width: 20%;
+  height: 85%;
+  text-align: left;
+  position: fixed;
+}
+#main-doc {
+  float: right;
+  width: 75%;
+  border-color: pink;
+  border-style: solid;
+  border-width: 1px;
+}
+.nav-link {
+}
+div {
+  margin-bottom: 30px;
+}
+@media (min-width: 10px) {
+  p,
+  a {
+    font-size: 40px;
   }
 }
