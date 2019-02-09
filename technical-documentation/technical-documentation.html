@@ -1,0 +1,128 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+  <head> </head>
+
+  <body>
+    <nav id="navbar">
+      <div>
+        <header id="header">
+          <h2>Ninja Arts</h2>
+        </header>
+      </div>
+      <div>
+        <a class="nav-link" href="#Ninjutsu">Ninjutsu</a>
+      </div>
+      <div>
+        <a class="nav-link" href="#Genjutsu">Genjutsu</a>
+      </div>
+      <div><a class="nav-link" href="#Taijutsu">Taijutsu</a></div>
+      <div><a class="nav-link" href="#Summoning-jutsu">Summoning-jutsu</a></div>
+      <div><a class="nav-link" href="#Kekkei_Genkai">Kekkei Genkai</a></div>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Ninjutsu">
+        <header>
+          <h2>
+            Ninjutsu
+          </h2>
+        </header>
+        <p>
+          One way to perform a substitution jutsu on a data is by storing the
+          data in a temporary variable. For instance if we start off with
+          <code
+            >var usedSubstitution = false; var ninja = 'naruto'; var temp =
+            naruto; usedSubstitution = true;</code
+          >
+          and an enemyAttacks function comes along
+          <code
+            >ninja = enemyAttacks(ninja); function enemyAttacks(victim) { victim
+            = null; return victim;};</code
+          >
+          the string naruto seems almost lost forever. But wait, we saved
+          'naruto' in a temp variable before the enemy function was able to
+          destroy our 'naruto' string data forever. So actually the string
+          'naruto' still exists in our code. He's stored in the variable temp.
+          And he still has a chance to be re-instantiated into any string type
+          variable. Since var ninja was stored before he was destroyed, he has a
+          chance to be used in his scope of the code. Thus
+          <code>if(usedSubstitution){ninja=temp};</code> is the next line of
+          code our 'naruto' string still exists. Data should be stored if they
+          should be reused again.
+        </p>
+        <p>
+          We also have shadow clone jutsu. If we have an array called
+          <code>var ninja = [10];</code> we could create many 'naruto' in our
+          program by using the <code>.fill()</code> method. For instance, if we
+          do <code>ninja.fill('naruto'</code>, this built in javascript function
+          will populate the the whole array with the same string: 'naruto'.
+        </p>
+      </section>
+      <section class="main-section" id="Genjutsu">
+        <header>
+          <h2>Genjutsu</h2>
+        </header>
+        <p></p>
+        <code></code>
+        <p></p>
+      </section>
+      <section class="main-section" id="Taijutsu">
+        <header>
+          <h2>Taijutsu</h2>
+        </header>
+        <p></p>
+        <p></p>
+      </section>
+      <section class="main-section" id="Summoning-jutsu">
+        <header>
+          <h2>Summoning-jutsu</h2>
+        </header>
+        <p><code>import {Gamakichi} from './land_of_toads'</code></p>
+        <p></p>
+      </section>
+      <section class="main-section" id="Kekkei_Genkai">
+        <header>
+          <h2>Kekkei Genkai</h2>
+        </header>
+        <p></p>
+        <ul>
+          <h3>Certain Kekkei Genkai include:</h3>
+          <li>
+            <h4>Rinnegan</h4>
+          </li>
+          <li>
+            <h4>Mangekyou Sharingan</h4>
+          </li>
+          <li>
+            <h4>Byakugan</h4>
+          </li>
+          <li>
+            <h4>Wood Release</h4>
+          </li>
+          <li>
+            <h4>Storm Release</h4>
+          </li>
+        </ul>
+        <p></p>
+      </section>
+    </main>
+  </body>
+  <footer></footer>
+</html>
+<!--
+User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
+User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
+User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
+User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "Javascript and Java" should have a corresponding id="Javascript_and_Java").
+User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
+User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
+User Story #7: The .main-section elements should contain at least 5 li items total (not each).
+User Story #8: I can see a nav element with a corresponding id="navbar".
+User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
+User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
+User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
+User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
+User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+User Story #15: My Technical Documentation page should use at least one media query.
+-->
