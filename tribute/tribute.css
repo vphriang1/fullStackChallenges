@@ -1,6 +1,83 @@
-img {
+#main {
+  border: 1px solid black;
+  background: rgb(205, 205, 205, 0.2);
+}
+header {
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 10px;
+}
+#title {
+  text-align: center;
+}
+#image {
   display: block;
   margin: auto;
   max-width: 100%;
   height: auto;
+}
+#img-caption {
+  text-align: center;
+  border: 1px dotted black;
+  margin-left: 220px;
+}
+.whatever-img {
+  width: 100%;
+}
+#tribute-header {
+  text-align: center;
+}
+hr {
+  width: 400px;
+  border: 1px solid;
+}
+#tribute-info {
+  column-count: 3;
+  padding: 5px;
+}
+#paragraph::first-letter {
+  font-size: 30px;
+}
+footer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+}
+#tribute-link {
+  position: relative;
+  animation-name: info;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes info {
+  0% {
+    top: -4px;
+  }
+  50% {
+    top: 2px;
+  }
+  100% {
+    top: -4px;
+  }
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 2fr 40%;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid;
+}
+
+.pictures {
+  width: 100%;
+  height: auto;
+  border: 3px solid;
+  margin: auto;
 }
