@@ -5,97 +5,119 @@
   <link rel='stylesheet' href='survey.css'>
 </head>
 <body>
-  <h1 id='title'>Hidden Leaf Ninja Academy</h1>
+  <h1 id='title'>Hidden Leaf Ninja Academy Application Form</h1>
   <div id='form-background'>
     <form id='survey-form'>
-      <p id='description'> Apply here</p>
-      <hr>
-      <div id='applicant'>
+
+      <section id='part-1-2'>
+        <p id='description'> Apply here</p>
+        <hr id='hr1'>
+        <h2 id='part-1-title'>Part 1</h2>
         <fieldset id='first-grid'>
-          <div>
+          <legend class='paragraphs'>Basic information</legend>
+          <div class='basic-info-align'>
             <label id='name-label'> Name </label>
             <input id='name' placeholder='Sasuke' required></div>
-          <div>
+          <div class='basic-info-align'>
             <label> Clan </label>
             <input id='clan' placeholder='Uchiha' required></div>
-          <div>
+          <div class='basic-info-align'>
             <label id='number-label'> Age </label>
             <input id='number' type='number' placeholder='6' dropdown min='0' max='10'></div>
-          <div><label> Zodiac Sign </label>
+          <div class='basic-info-align'><label> Zodiac Sign </label>
             <input id='zodiac' placeholder='Leo'></div>
-          <div>
+          <div class='basic-info-align'>
             <label id='email-label'> Email </label>
             <input id='email' type='email' placeholder='sasukeuchiha@leafninja.com' required></div>
-          <div>
+          <div class='basic-info-align'>
             <label> Address </label>
             <input id='address' placeholder='2042 Cat Avenue'></div>
         </fieldset>
-      </div>
-      <div id='part-2'>
-        <p>
-          Have you ever applied to the academy?
-        </p>
-        <fieldset>
-          <label for='applyYes'><input id='applyYes' type='radio' name='applied' value='0'>Yes</label>
-          <label for='applyNo'><input id ='applyNo' type='radio' name='applied' value='1'>No</label>
-          <label for 'applyUnsure'><input id ='applyUnsure' type='radio' name='applied' value='2'>Unsure</label>
+        <h2 id='part-2-title'>Part 2</h2>
 
-        </fieldset>
-        <p> Have you ever been black balled out of the academy? </p>
-        <fieldset>
-          <ul for='blackBalledYes'><input id='blackBalledYes' type='radio' name='blackBalled' value='0'>Yes</ul>
-
-          <ul for='blackBalledNo'><input id='blackBalledNo' type='radio' name='blackBalled' value='1'>No</ul>
-          <ul for 'blackBalledUnsure'><input id='blackBalledUnsure' type='radio' name='blackBalled' value='2'>Unsure</ul>
-        </fieldset>
-        <p>Do you have any allergies?</p>
-        <fieldset>
+        <fieldset class='part-2'>
+          <legend class='paragraphs'>Do you have any allergies?</legend>
           <ul for='allergyYes'><input id='allergyYes' type='radio' name='allergy' value='0'>Yes</ul>
           <ul for='allergyNo'><input id='allergyNo' type='radio' name='allergy' value='1'>No</ul>
           <ul for 'allergyUnsure'><input id='allergyUnsure' type='radio' name='allergy' value='2'>Unsure</ul>
         </fieldset>
-        <p>
-          How much jutsu do you know?
-        </p>
+
         <fieldset>
-          <select id='dropdown' placeholder='I know ..'>
-          <option> 0 jutsu </option>
+          <legend class='paragraphs' id='scared-title'>Tell us what you are scared of:</legend>
+          <textarea id='scared-area'></textarea>
+        </fieldset>
+      </section>
+      <section id='part-3'>
+        <hr id='hr2'>
+        <h2 id='part-3-title'>Part 3</h2>
+        <div id='part-3-grid'>
+
+          <fieldset>
+            <legend class='paragraphs'> Have you ever applied to the academy?
+            </legend>
+            <label for='applyYes'><input id='applyYes' type='radio' name='applied' value='0'>Yes</label>
+            <label for='applyNo'><input id ='applyNo' type='radio' name='applied' value='1'>No</label>
+            <label for 'applyUnsure'><input id ='applyUnsure' type='radio' name='applied' value='2'>Unsure</label>
+
+          </fieldset>
+
+          <fieldset>
+            <legend class='paragraphs'> Have you ever been black balled out of the academy? </legend>
+            <ul for='blackBalledYes'><input id='blackBalledYes' type='radio' name='blackBalled' value='0'>Yes</ul>
+
+            <ul for='blackBalledNo'><input id='blackBalledNo' type='radio' name='blackBalled' value='1'>No</ul>
+            <ul for 'blackBalledUnsure'><input id='blackBalledUnsure' type='radio' name='blackBalled' value='2'>Unsure</ul>
+          </fieldset>
+
+          <fieldset>
+            <legend class='paragraphs'>
+              How much jutsu do you know?
+            </legend>
+            <select id='dropdown'>
+            
+          <option>0</option>
           <option> 1 - 3 jutsu </option>
           <option> 4 - 6 jutsu </option>
           <option> more jutsu </option>
+           
         </select>
-        </fieldset>
-        <p>
-          Are you willing to train yourself into becoming a respected and feared ninja? </p>
+          </fieldset>
+
+          <fieldset>
+            <legend class='paragraphs'>
+              Are you willing to train yourself into becoming a respected and feared ninja? </legend>
+            <ul for='trainYes'><input id='trainYes' type='radio' name='train' value='0'>Yes</ul>
+            <ul for='trainNo'><input id='trainNo' type='radio' name='train' value='1'>No</ul>
+            <ul for 'trainUnsure'><input id='trainUnsure' type='radio' name='train' value='2'>Unsure</ul>
+          </fieldset>
+
+          <fieldset>
+            <legend class='paragraphs'> Are any of your family members ninjas? </legend>
+            <ul for='blackOpsYes'><input id='blackOpsYes' type='radio' name='blackOps' value='0'>Yes</ul>
+            <ul for='blackOpsNo'><input id='blackOpsNo' type='radio' name='blackOps' value='1'>No</ul>
+            <ul for 'blackOpsUnsure'><input id='blackOpsUnsure' type='radio' name='blackOps' value='2'>Unsure</ul>
+          </fieldset>
+
+          <fieldset>
+            <legend class='paragraphs'> How many friends do you have that is in the academy?</legend>
+            <ul for='friendLow'><input type='checkbox' name='friends' value='0' id='friendLow'> 0-4</ul>
+            <ul for='friendMed'><input type='checkbox' name='friends' value='1' id='friendMed'> 5-9</ul>
+            <ul for='friendHigh'><input type='checkbox' name='friends' value='0' id='friendHigh'> 10+</ul>
+
+          </fieldset>
+        </div>
+      </section>
+      <section id='part-4'>
 
         <fieldset>
-          <ul for='trainYes'><input id='trainYes' type='radio' name='train' value='0'>Yes</ul>
-          <ul for='trainNo'><input id='trainNo' type='radio' name='train' value='1'>No</ul>
-          <ul for 'trainUnsure'><input id='trainUnsure' type='radio' name='train' value='2'>Unsure</ul>
-        </fieldset>
-
-        <p> Are any of your family members ninjas? </p>
-        <fieldset>
-          <ul for='blackOpsYes'><input id='blackOpsYes' type='radio' name='blackOps' value='0'>Yes</ul>
-          <ul for='blackOpsNo'><input id='blackOpsNo' type='radio' name='blackOps' value='1'>No</ul>
-          <ul for 'blackOpsUnsure'><input id='blackOpsUnsure' type='radio' name='blackOps' value='2'>Unsure</ul>
-        </fieldset>
-        <p> How many friends do you have that is in the academy?</p>
-        <fieldset>
-          <ul for='friendLow'><input type='checkbox' name='friends' value='0' id='friendLow'> 0-4</ul>
-          <ul for='friendMed'><input type='checkbox' name='friends' value='1' id='friendMed'> 5-9</ul>
-          <ul for='friendHigh'><input type='checkbox' name='friends' value='0' id='friendHigh'> 10+</ul>
-
-        </fieldset>
-        <p> Please take the time to tell us why you want to join: </p>
-        <fieldset>
+          <legend class='paragraphs'> Please take the time to tell us why you want to join: </legend>
           <textarea id='textArea'>I want to join because.. </textarea>
 
         </fieldset>
         <button id='submit'>Submit</submit>
       </button>
         <hr>
-      </div>
+      </section>
 
     </form>
 
