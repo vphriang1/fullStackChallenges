@@ -14,256 +14,154 @@ body {
     rgb(0, 220, 0),
     rgb(0, 200, 0)
   );
-  height: 1800px;
+  height: 2050px;
 }
 #title {
-  position: fixed;
+  position: relative;
+  text-align: center;
   margin: auto;
   text-align: center;
-  letter-spacing: 20px;
-  background-color: #80c6f7;
-  z-index: 3;
+  letter-spacing: 10px;
+  line-height: 50px;
+  margin-top: 30px;
   width: 670px;
 }
 
 #form-background {
-  width: 500px;
-  height: 1700px;
+  width: 800px;
+  height: auto;
   display: flex;
   margin: auto;
-  background-color: rgb(255, 255, 255, 0.5);
-  border-radius: 25px @media (max-width: 900px) {
-    p {
-    }
-  }
-  @media (min-width: 100px) {
-    p {
-    }
-  }
-
-  body {
-    background: linear-gradient(
-      200deg,
-      rgb(0, 200, 0),
-      rgb(0, 220, 0),
-      rgb(0, 200, 0)
-    );
-    height: 2050px;
-  }
-  #title {
-    position: relative;
-    text-align: center;
-    margin: auto;
-    text-align: center;
-    letter-spacing: 10px;
-    line-height: 50px;
-    margin-top: 30px;
-    width: 670px;
-  }
-
-  #form-background {
-    width: 800px;
-    height: auto;
-    display: flex;
-    margin: auto;
-    background-color: rgb(255, 255, 255, 0.9);
-    border-radius: 15px;
-    position: relative;
-    top: 40px;
-    font-size: 18px;
-  }
-
-  #survey-form {
-    position: relative;
-
-    padding: 10px;
-    width: 90%;
-
-    margin: auto;
-  }
-  hr {
-    border: 1px dashed;
-    width: 100%;
-  }
-
-  #hr1 {
-    margin-bottom: 20px;
-  }
-  #hr2 {
-    margin-top: 97px;
-    margin-bottom: 28px;
-  }
-  #part-1-title {
-    display: auto;
-    margin: auto;
-    padding: 20px;
-  }
-  #part-2-title {
-    display: auto;
-    margin: auto;
-    margin-top: 10px;
-    padding: 20px;
-  }
-  #part-3-title {
-    display: auto;
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  #part-1-2 {
-    float: left;
-    display: grid;
-    grid-gap: 10px;
-    width: 40%;
-    margin-top: 15px;
-  }
-
-  #description {
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 1em;
-    margin: auto;
-  }
-  #first-grid {
-    display: grid;
-    align-items: space-around;
-    grid-gap: 10px;
-  }
-
-  h2 {
-    display: auto;
-    margin: auto;
-    margin-bottom: 20px;
-    font-size: 25px;
-    letter-spacing: 2px;
-  }
-
-  .part-2 {
-    width: 260px;
-    margin-top: 0px;
-  }
-  #scared-title {
-    margin-top: 25px;
-  }
-  #scared-area {
-    resize: none;
-    width: 260px;
-    height: 130px;
-    font-size: 20px;
-  }
-
-  #part-3 {
-    display: block;
-    float: right;
-    width: 50%;
-    margin: auto;
-  }
-  #part-3-grid {
-    display: grid;
-    grid-gap: 20px;
-    justify-content: space-between;
-    align-items: space-between;
-  }
-  #part-4 {
-    text-align: center;
-    display: block;
-    padding: 10px;
-    padding-top: 30px;
-    clear: both;
-  }
-
-  #dropdown {
-    display: block;
-    margin: auto;
-    height: 100px;
-    width: 280px;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  #first-grid div input {
-    width: 260px;
-    height: 50px;
-    font-size: 20px;
-  }
-
-  #textArea {
-    width: 100%;
-    height: 100px;
-    resize: none;
-    font-size: 20px;
-  }
-  #submit {
-    display: block;
-    margin: auto;
-    font-size: 100%;
-    width: 100px;
-    height: 50px;
-    border-radius: 30px;
-    margin-bottom: 15px;
-    margin-top: 10px;
-  }
-
-  .paragraphs {
-    width: 100%;
-    text-align: center;
-  }
-
-  .basic-info-align {
-    display: flex;
-    flex-direction: column;
-  }
-  border: 1px solid;
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 15px;
   position: relative;
-  top: 85px;
-  margin-bottom: 20px;
-  z-index: 1;
+  top: 40px;
+  font-size: 18px;
 }
-hr {
-  border: 1px dashed;
-}
+
 #survey-form {
   position: relative;
 
   padding: 10px;
-  width: 450px;
-  display: block;
+  width: 90%;
+
   margin: auto;
 }
+hr {
+  border: 1px dashed;
+  width: 100%;
+}
 
-#applicant {
-  float: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  margin-top: 15px;
+#hr1 {
   margin-bottom: 20px;
 }
+#hr2 {
+  margin-top: 97px;
+  margin-bottom: 28px;
+}
+#part-1-title {
+  display: auto;
+  margin: auto;
+  padding: 20px;
+}
+#part-2-title {
+  display: auto;
+  margin: auto;
+  margin-top: 10px;
+  padding: 20px;
+}
+#part-3-title {
+  display: auto;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#part-1-2 {
+  float: left;
+  display: grid;
+  grid-gap: 10px;
+  width: 40%;
+  margin-top: 15px;
+}
+
+#description {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1em;
+  margin: auto;
+}
 #first-grid {
-  width: 50%;
   display: grid;
   align-items: space-around;
   grid-gap: 10px;
 }
-#description {
-  display: block;
-  text-align: center;
-  font-size: 40px;
-  letter-spacing: 1em;
+
+h2 {
+  display: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 25px;
+  letter-spacing: 2px;
 }
 
-#part-2 {
+.part-2 {
+  width: 260px;
+  margin-top: 0px;
+}
+#scared-title {
   margin-top: 25px;
 }
+#scared-area {
+  resize: none;
+  width: 260px;
+  height: 130px;
+  font-size: 20px;
+}
+
+#part-3 {
+  display: block;
+  float: right;
+  width: 50%;
+  margin: auto;
+}
+#part-3-grid {
+  display: grid;
+  grid-gap: 20px;
+  justify-content: space-between;
+  align-items: space-between;
+}
+#part-4 {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  padding-top: 30px;
+  clear: both;
+}
+
+#dropdown {
+  display: block;
+  margin: auto;
+  height: 100px;
+  width: 280px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#first-grid div input {
+  width: 260px;
+  height: 50px;
+  font-size: 20px;
+}
+
 #textArea {
   width: 100%;
   height: 100px;
   resize: none;
+  font-size: 20px;
 }
 #submit {
   display: block;
@@ -274,4 +172,14 @@ hr {
   border-radius: 30px;
   margin-bottom: 15px;
   margin-top: 10px;
+}
+
+.paragraphs {
+  width: 100%;
+  text-align: center;
+}
+
+.basic-info-align {
+  display: flex;
+  flex-direction: column;
 }
