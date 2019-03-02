@@ -25,6 +25,16 @@ body {
   line-height: 50px;
   margin-top: 30px;
   width: 670px;
+  padding: 80px;
+}
+
+#description {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1em;
+  margin: auto;
+  margin-top: 20px;
 }
 
 #form-background {
@@ -41,42 +51,24 @@ body {
 
 #survey-form {
   position: relative;
-
   padding: 10px;
   width: 90%;
-
   margin: auto;
 }
-hr {
-  border: 1px dashed;
-  width: 100%;
-}
 
-#hr1 {
-  margin-bottom: 20px;
-}
-#hr2 {
-  margin-top: 97px;
-  margin-bottom: 28px;
-}
 #part-1-title {
   display: auto;
   margin: auto;
-  padding: 20px;
 }
+
 #part-2-title {
   display: auto;
   margin: auto;
-  margin-top: 10px;
-  padding: 20px;
 }
+
 #part-3-title {
   display: auto;
   margin: auto;
-  margin-top: 20px;
-  padding: 20px;
-  margin-bottom: 10px;
-  text-align: center;
 }
 
 #part-1-2 {
@@ -84,35 +76,32 @@ hr {
   display: grid;
   grid-gap: 10px;
   width: 40%;
-  margin-top: 15px;
 }
 
-#description {
-  display: block;
-  text-align: center;
-  font-size: 30px;
-  letter-spacing: 1em;
-  margin: auto;
-}
 #first-grid {
   display: grid;
   align-items: space-around;
   grid-gap: 10px;
 }
 
+#first-grid div input {
+  width: 260px;
+  height: 50px;
+  font-size: 20px;
+}
+
 h2 {
   display: auto;
   margin: auto;
-  margin-bottom: 20px;
   font-size: 25px;
   letter-spacing: 2px;
 }
 
-.part-2 {
+#part-2 {
   width: 260px;
-  margin-top: 0px;
 }
-#scared-title {
+
+#scared-textbox-label {
   margin-top: 25px;
 }
 #scared-area {
@@ -128,33 +117,22 @@ h2 {
   width: 50%;
   margin: auto;
 }
-#part-3-grid {
-  display: grid;
-  grid-gap: 20px;
-  justify-content: space-between;
-  align-items: space-between;
+
+#dropdown {
+  display: block;
+  margin: auto;
+  height: 2em;
+  width: 8em;
+  font-size: 20px;
+  text-align: center;
 }
+
 #part-4 {
   text-align: center;
   display: block;
   padding: 10px;
   padding-top: 30px;
   clear: both;
-}
-
-#dropdown {
-  display: block;
-  margin: auto;
-  height: 100px;
-  width: 280px;
-  font-size: 20px;
-  text-align: center;
-}
-
-#first-grid div input {
-  width: 260px;
-  height: 50px;
-  font-size: 20px;
 }
 
 #textArea {
@@ -182,4 +160,14 @@ h2 {
 .basic-info-align {
   display: flex;
   flex-direction: column;
+}
+
+fieldset ul input[type='radio'] {
+  width: 2em;
+  height: 2em;
+}
+
+fieldset ul input[type='checkbox'] {
+  width: 2em;
+  height: 2em;
 }
