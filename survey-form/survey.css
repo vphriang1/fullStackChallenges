@@ -10,9 +10,9 @@
 body {
   background: linear-gradient(
     200deg,
-    rgb(0, 200, 0),
-    rgb(0, 220, 0),
-    rgb(0, 200, 0)
+    rgb(0, 0, 0),
+    rgb(0, 50, 0),
+    rgb(0, 00, 0)
   );
   height: 2050px;
 }
@@ -26,6 +26,7 @@ body {
   margin-top: 30px;
   width: 670px;
   padding: 80px;
+  color: rgb(255, 205, 255);
 }
 
 #description {
@@ -35,6 +36,8 @@ body {
   letter-spacing: 1em;
   margin: auto;
   margin-top: 20px;
+  font-weight: bold;
+  color: rgb(255, 150, 255);
 }
 
 #form-background {
@@ -42,7 +45,7 @@ body {
   height: auto;
   display: flex;
   margin: auto;
-  background-color: rgb(255, 255, 255, 0.9);
+  background-color: rgb(255, 205, 255, 1);
   border-radius: 15px;
   position: relative;
   top: 40px;
@@ -56,66 +59,46 @@ body {
   margin: auto;
 }
 
-#part-1-title {
-  display: auto;
-  margin: auto;
-}
-
-#part-2-title {
-  display: auto;
-  margin: auto;
-}
-
-#part-3-title {
-  display: auto;
-  margin: auto;
-}
-
-#part-1-2 {
-  float: left;
-  display: grid;
-  grid-gap: 10px;
-  width: 40%;
+#intro {
+  width: 100%;
+  margin-top: 40px;
 }
 
 #first-grid {
+  display: block;
+  float: left;
+  margin-left: 55px;
+}
+#second-grid {
+  display: block;
+  float: right;
+  margin-right: 55px;
+}
+#questionaire {
+  display: block;
+  padding: 40px;
+  padding-top: 0px;
+}
+.basic-info-align {
+  display: flex;
+  flex-direction: column;
+}
+.grid {
   display: grid;
   align-items: space-around;
   grid-gap: 10px;
 }
 
-#first-grid div input {
+.grid div input {
   width: 260px;
   height: 50px;
   font-size: 20px;
 }
 
-h2 {
-  display: auto;
-  margin: auto;
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-
-#part-2 {
-  width: 260px;
-}
-
-#scared-textbox-label {
-  margin-top: 25px;
-}
-#scared-area {
-  resize: none;
-  width: 260px;
-  height: 130px;
-  font-size: 20px;
-}
-
-#part-3 {
-  display: block;
-  float: right;
-  width: 50%;
-  margin: auto;
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #dropdown {
@@ -127,7 +110,11 @@ h2 {
   text-align: center;
 }
 
-#part-4 {
+select option {
+  color: red;
+}
+
+#submit_form {
   text-align: center;
   display: block;
   padding: 10px;
@@ -135,12 +122,6 @@ h2 {
   clear: both;
 }
 
-#textArea {
-  width: 100%;
-  height: 100px;
-  resize: none;
-  font-size: 20px;
-}
 #submit {
   display: block;
   margin: auto;
@@ -152,22 +133,31 @@ h2 {
   margin-top: 10px;
 }
 
-.paragraphs {
+ul input[type='radio'] {
+  width: 3em;
+  height: 3em;
+}
+
+ul input[type='checkbox'] {
+  width: 3em;
+  height: 3em;
+}
+
+.instruction {
   width: 100%;
+  width: 35% border-box;
   text-align: center;
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  font-weight: bold;
+  color: rgb(255, 0, 105);
 }
-
-.basic-info-align {
-  display: flex;
-  flex-direction: column;
-}
-
-fieldset ul input[type='radio'] {
-  width: 2em;
-  height: 2em;
-}
-
-fieldset ul input[type='checkbox'] {
-  width: 2em;
-  height: 2em;
+#commentArea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  font-size: 20px;
 }
