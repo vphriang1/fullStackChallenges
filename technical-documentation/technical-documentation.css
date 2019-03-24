@@ -1,26 +1,66 @@
-#navbar {
-  border-width: 2px;
-  border-color: red;
-  border-style: solid;
-  float: left;
-  width: 20%;
-  height: 85%;
-  text-align: left;
-  position: fixed;
+nav a,
+nav header {
+  font-size: 18px;
+  border: 1px solid black;
+  border-width: thin;
+  border-left: none;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
+nav {
+  display: grid;
+  grid-template-row: repeat(72, 100px);
+  width: 26%;
+}
+
+.nav-link {
+  height: 90px;
+}
+/*for the nav bar links*/
+label {
+  margin-left: 10px;
+  font-size: 1.2em;
+  margin-right: 20px;
+  line-height: 25px;
+}
+
+/* float the nav and main-cont left and right */
+
+#navbar {
+  float: left;
+  position: fixed;
+  max-height: calc(100vh - 10px);
+  overflow-y: auto;
+}
+
 #main-doc {
   float: right;
-  width: 75%;
-  border-color: pink;
-  border-style: solid;
-  border-width: 1px;
+  width: 70%;
 }
-.nav-link {
+
+header {
+  font-size: 1.5em;
 }
-div {
-  margin-bottom: 30px;
+
+nav header {
+  font-size: 3.5em;
+  align-items: center;
 }
-@media (min-width: 100px) {
-  p {
+nav header label {
+  display: flex;
+  height: 100px;
+  margin-left: 5px;
+  align-items: center;
+  letter-spacing: 5px;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    width: 20%;
+  }
+  #main-doc {
+    width: 76%;
   }
 }
