@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 const database = [
-  { name: 'Vigeneareay', value: 'she is so beautiful' },
-  { name: 'Wing', value: 'she is amazing' },
-  { name: 'Vidget', value: 'she is lovely' }
+  { name: 'Kakashi', value: 'Too much ambition will destroy you' },
+  { name: 'Jiraiya', value: 'Home is wherever someone is thinking of you' },
+  { name: 'Asuma', value: 'Finely and sharply' }
 ];
 export default class App extends Component {
   constructor(props) {
