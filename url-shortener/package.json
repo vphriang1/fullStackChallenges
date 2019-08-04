@@ -1,0 +1,21 @@
+{
+  "name": "shorturl",
+  "version": "0.0.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dns": "^0.2.2",
+    "dotenv": "^8.0.0",
+    "express": "^5.0.0-alpha.2",
+    "mongodb": "2.2.5",
+    "mongoose": "^5.6.4",
+    "shortid": "^2.2.14",
+    "valid-url": "^1.0.9"
+  },
+  "engines": {
+    "node": "4.4.5"
+  }
+}

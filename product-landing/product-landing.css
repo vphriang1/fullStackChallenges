@@ -1,0 +1,147 @@
+@media (min-width: 200px) {
+  p {
+  }
+}
+
+#nav-bar {
+  position: relative;
+  float: right;
+  display: block;
+  margin: auto;
+  right: 30px;
+  margin-top: 8px;
+}
+.nav-link {
+  position: relative;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  top: 10px;
+  color: black;
+  text-decoration: none;
+}
+#header {
+  position: fixed;
+  width: 100%;
+}
+#header-img {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100px;
+  height: auto;
+  top: -15px;
+  left: 0px;
+}
+#siteTitle {
+  display: flex;
+  justify-content: center;
+}
+#form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+#block1 {
+  display: block;
+  background-color: green;
+  height: 40px;
+  margin: auto;
+  margin-top: 5px;
+  width: 90%;
+}
+#email,
+submit {
+  display: block;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+/* middle */
+#video {
+  display: block;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#ch1,
+#ch2,
+#ch3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
+}
+
+/* purchase */
+#pricing {
+  display: grid;
+  width: 90%;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.merchandise-div {
+  border: 1px dashed black;
+  width: 99%;
+}
+.merchandise {
+  font-size: 27px;
+  display: flex;
+  justify-content: center;
+}
+#box1,
+#box2,
+#box3 {
+  border: 1px solid black;
+}
+
+.purchase {
+  display: flex;
+  font-size: 18px;
+  margin: auto;
+}
+
+/* end */
+#footer {
+  height: 80px;
+  background: rgb(0, 145, 0, 0.7);
+  width: 80%;
+  margin: auto;
+}
+.foot-link {
+  font-size: 20px;
+}
+#move-right {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+}
+
+.spacing {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+  align-items: end;
+  background: none;
+}
+
+#practice-right {
+  display: grid;
+  grid-area: 2/1/3/4;
+  align-self: start;
+  background: none;
+}
